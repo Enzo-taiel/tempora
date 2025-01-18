@@ -80,8 +80,7 @@ Tempora/
 │   ├── models/       # Gestion de datos y estados
 │   ├── service/      # Llamadas a la API
 │   ├── utils/        # Funciones utilitarias
-│   ├── types/        # Definiciones de tipo (TypeScript)
-│   └── App.js        # Componente principal
+│   └── types/        # Definiciones de tipo (TypeScript)
 ├── .env              # Variables de entorno
 ├── package.json      # Configuración del proyecto
 └── README.md         # Documentación
