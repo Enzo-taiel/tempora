@@ -19,7 +19,7 @@ export default function WeatherCard({
   wind,
 }: WeatherCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-xl p-6 transform transition duration-500 hover:scale-105">
+    <div className="bg-[var(--paper)] backdrop-blur-lg rounded-lg shadow-xl p-6 ">
       <div className="text-6xl mb-4 text-center">
         <Image
           src={{
@@ -31,17 +31,17 @@ export default function WeatherCard({
           className="w-24 h-24 mb-4"
         />
       </div>
-      <h2 className="text-2xl font-semibold mb-2 text-center text-gray-950">{city}</h2>
-      <div className="text-4xl font-bold mb-2 text-center text-gray-600">{temp}°C</div>
-      <p className="text-gray-600 mb-4 text-center">{condition}</p>
+      <h2 className="text-2xl font-semibold mb-2 text-center ">{city}</h2>
+      <div className="text-4xl font-bold mb-2 text-center  text-gray-700 dark:text-gray-300">{temp}°C</div>
+      <p className="text-white mb-4 text-center">{condition}</p>
       <div className="flex justify-around text-gray-700">
         <div className="flex items-center">
           <Droplet size={20} className="mr-2 text-blue-500" />
-          <span>{humidity}%</span>
+          <span className="text-white">{humidity}%</span>
         </div>
         <div className="flex items-center">
           <Wind size={20} className="mr-2 text-blue-500" />
-          <span>{wind} km/h</span>
+          <span className="text-white">{wind} km/h</span>
         </div>
       </div>
     </div>

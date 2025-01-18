@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #37AFE1;
+  --foreground: #000000;
+  --paper: #4CC9FE;
+  --bg-btn: #FFFECB;
+  --paper-in-paper: #4CC9FE
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #402E7A;
+    --foreground: #FFFFFF;
+    --paper: #4C3BCF;
+    --bg-btn: #3DC2EC;
+    --paper-in-paper: rgb(245, 244, 179, 0.3)
   }
 }
 
